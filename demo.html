@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 960px;
+            border: 1px solid rgb(159, 85, 140);
+        }
+        
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(133, 202, 231);
+        }
+        
+        footer {
+            width: 959px;
+            height: 100px;
+            background-color: rgb(218, 119, 119);
+            text-align: center;
+            padding-top: 30px;
+        }
+        
+        .content {
+            width: 959.6px;
+            height: 450px;
+            background-color: rgb(132, 198, 229);
+        }
+        
+        section {
+            width: 80%;
+            height: 450px;
+            background-color: rgb(252, 231, 249);
+            float: left;
+        }
+        
+        aside {
+            width: 19.6%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(122, 160, 217);
+            float: left;
+        }
+        
+        article h3 {
+            text-align: center;
+            margin: 10px;
+            color: rgb(0, 0, 0);
+        }
+        
+        section article img {
+            height: 150px;
+            width: 100%;
+        }
+        
+        .lbl {
+            height: 300px;
+            float: left;
+            width: 200px;
+            margin-left: 20px;
+        }
+        
+        .inp {
+            height: 300px;
+            float: left;
+            width: 200px;
+        }
+        
+        .cls {
+            clear: both;
+        }
+        
+        center {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header></header>
+        <div class="cls"></div>
+        <div class="content">
+            <section>
+                <article>
+                    <h3>NHA THO DUC BA</h3>
+                </article>
+                <article>
+                    <img src="https://ik.imagekit.io/tvlk/blog/2023/01/nha-tho-duc-ba-1.jpg?tr=dpr-2,w-675" alt="">
+                </article>
+                <article>
+                    <form action="" method="get">
+                        <h4 style="text-align: center; margin-top:10px; margin-bottom: 5px">THÔNG TIN</h4>
+                        <div class="lbl">
+                            <label for="">Mã Sinh Viên:</label><br><br>
+                            <label for="">Họ và Tên:</label><br><br>
+                            <label for="">Ngày sinh:</label><br><br>
+                            <label for="">Quê quán:</label><br><br>
+                            <label for="">Giới tính:</label><br><br>
+                        </div>
+                        <div class="inp">
+                            <input type="text" name="txtMA" id="txtMA"><br><br>
+                            <input type="text" name="txtHT" id="txtHT"><br><br>
+                            <input type="date" name="txtdate" id="txtdate"><br><br>
+                            <select name="slPL" id="slPL">  
+                                <option value="QUAN GO VAP">GÒ VẤP</option>  
+                                <option value="QUAN BINH THANH">BÌNH THẠNH</option>  
+                                <option value="NGUYEN HUE">PHỐ ĐI BỘ NGUYỄN HUỆ</option>  
+                                <option value="QUAN 2">QUẬN 2</option>  
+                                <option value="BEN THANH">CHỢ BẾN THÀNH</option>  
+                                <option value="DINH DOC LAP">DINH ĐỘC LẬP</option>  
+                            </select><br><br>
+                            <input type="radio" name="gt" id="ckbNam" value="Nam"><label>Nam</label>
+                            <input type="radio" name="gt" id="ckbNư" value="Nữ"><label>Nữ</label>
+                            <input type="radio" name="gt" id="ckbKhác" value="Khác"><label>Khác</label><br><br>
+                        </div>
+                        <div class="cls"></div>
+                        <center>
+                            <button type="submit">ĐĂNG KÝ</button>
+                            <button type="reset">HỦY</button>
+                        </center>
+                    </form>
+                </article>
+            </section>
+            <aside>
+                <p>Phone: 0359804162 </p>
+                <p>Name: HoangThiNgocNgan</p>
+            </aside>
+        </div>
+        <div class="cls"></div>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
